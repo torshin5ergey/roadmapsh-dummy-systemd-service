@@ -1,0 +1,15 @@
+[Unit]
+Description=Dummy Systemd Service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dummy.sh
+User=root
+Group=root
+Restart=always
+StandardOutput=journal+console
+StandardError=journal+console
+SyslogIdentifier=dummy
+
+[Install]
+WantedBy=multi-user.target
