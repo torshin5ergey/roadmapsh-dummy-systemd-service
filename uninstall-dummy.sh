@@ -6,7 +6,7 @@ systemctl stop dummy
 
 rm /usr/bin/dummy.sh
 
-rm /etc/systemd/system/dummy.service
+sudo rm /etc/systemd/system/dummy.service
 
 systemctl daemon-reload
 
